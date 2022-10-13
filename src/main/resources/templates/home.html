@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+<form>
+    <h2>Калькулятор</h2>
+    <h3><br><label for="value_one">Первое значение:</label><br></h3>
+
+   <input type="number" id="value_one" name="value_one"><br>
+
+    <br><input type="radio" id="+" name="operationformath" value="+">
+    <label for="+">Сложение</label>
+    <input type="radio" id="-" name="operationformath" value="-">
+    <label for="-">Вычитание</label>
+    <input type="radio" id="*" name="operationformath" value="*">
+    <label for="*">Умножение</label>
+    <input type="radio" id="/" name="operationformath" value="/">
+    <label for="/">Деление</label>
+
+    <h3><label for="value_two">Второе значение:</label><br></h3>
+    <input type="number" id="value_two" name="value_two"><br>
+
+    <br><input type="submit" id="submitGET" value="Получить результат (get)" formaction="/home" formmethod="get" ><br>
+   <br><input type="submit" id="submitPOST" value="Получить результат (post)" formaction="/home" formmethod="post" ><br>
+</form>
+</body>
+</html>
