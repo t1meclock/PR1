@@ -34,7 +34,14 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_svg: ^1.1.5
+ # flutter_svg: ^1.1.5
+
+  # БД для IOS и Android
+  sqflite: ^2.1.0 
+  # БД все остальное
+  sqflite_common_ffi: ^2.1.1+1
+  # dd
+  path_provider: ^2.0.11
 
 dev_dependencies:
   flutter_test:
@@ -59,53 +66,11 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/images/whalepic.png
-    - assets/images/circle1.png
-    - assets/images/circle.png
-    - assets/images/triangle.png
-    - assets/images/more.png
-    - assets/images/dot.png
-    - assets/images/yellowbutton.png
-    - assets/images/face1.png
-    - assets/images/face2.png
-    - assets/images/invite.png
-    - assets/images/share.png
-    - assets/images/notch.svg
-    - assets/images/outline.svg
-    - assets/images/batteryend.svg
-    - assets/images/fill.svg
-    - assets/images/wifi.svg
-    - assets/images/mobilesignal.svg
-    - assets/images/homeindicator.svg
-    - assets/images/meditationpic.svg
-    - assets/images/medinow.svg
-    - assets/images/search.svg
-    - assets/images/bg_sun.svg
-    - assets/images/sun.svg
-    - assets/images/heart.svg
-    - assets/images/frwd.svg
-    - assets/images/bg_orange.svg
-    - assets/images/onepic.svg
-    - assets/images/heart.svg
-    - assets/images/forward.svg
-    - assets/images/bg_yellow.svg
-    - assets/images/secpic.svg
-    - assets/images/bg_blue_sec.svg
-    - assets/images/earth.svg
-    - assets/images/bg_green.svg
-    - assets/images/onepic.svg
+  # assets:
 
   # example:
-  fonts:
-    - family: SFProText
-      fonts:
-        - asset: assets/fonts/SFProDisplay-Semibold.ttf
-          weight: 700  
-    - family: PlusJakartaSans
-      fonts:
-        - asset: assets/fonts/PlusJakartaSans-SemiBold.ttf
-          weight: 700
+  # fonts:
+    
 
   #   - family: Schyler
   #     fonts:
