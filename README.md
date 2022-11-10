@@ -29,33 +29,33 @@
 - onInitTable - заполнение таблиц данными.
 - onDropDataBase - удаление базы данных.
 
-  В папках «data\model» создаются модели базы данных.
+ В папках «data\model» создаются модели базы данных.
   
-  ![image](https://user-images.githubusercontent.com/99389490/201178295-5c8e59bd-7949-4e09-b0d8-816c1b0ed5f1.png)
+ ![image](https://user-images.githubusercontent.com/99389490/201178295-5c8e59bd-7949-4e09-b0d8-816c1b0ed5f1.png)
 
-  В итоге в проекте должно получиться 10 моделей базы данных.
+ В итоге в проекте должно получиться 10 моделей базы данных.
   
-  ![image](https://user-images.githubusercontent.com/99389490/201178320-29666816-088a-4f1a-b24b-bb4e61b9da01.png)
+ ![image](https://user-images.githubusercontent.com/99389490/201178320-29666816-088a-4f1a-b24b-bb4e61b9da01.png)
  
-  В папках «domain/entity» создаются сущности для моделей базы данных.
+ В папках «domain/entity» создаются сущности для моделей базы данных.
   
-  ![image](https://user-images.githubusercontent.com/99389490/201178383-4e6e9fbd-77a0-478c-b3ca-c6e527355b82.png)
+ ![image](https://user-images.githubusercontent.com/99389490/201178383-4e6e9fbd-77a0-478c-b3ca-c6e527355b82.png)
  
-  В итоге должно получиться 10 сущностей для базы данных.
+ В итоге должно получиться 10 сущностей для базы данных.
   
-  ![image](https://user-images.githubusercontent.com/99389490/201178432-18d2bb3e-0ee3-47b3-8122-e55686a83ddf.png)
+ ![image](https://user-images.githubusercontent.com/99389490/201178432-18d2bb3e-0ee3-47b3-8122-e55686a83ddf.png)
 
-  Так же существует файл «Main.dart».
+ Так же существует файл «Main.dart».
   
-  ![image](https://user-images.githubusercontent.com/99389490/201178467-dd75d86c-ed54-4420-bef4-8d5cb3887174.png)
+ ![image](https://user-images.githubusercontent.com/99389490/201178467-dd75d86c-ed54-4420-bef4-8d5cb3887174.png)
  
-  В итоге с помощью скачанного расширения «SQLite» можно посмотреть созданные таблицы базы данных. 
+ В итоге с помощью скачанного расширения «SQLite» можно посмотреть созданные таблицы базы данных. 
   
-  ![image](https://user-images.githubusercontent.com/99389490/201178511-070b836f-928d-4b3a-9f7a-24fd628d83e0.png)
+ ![image](https://user-images.githubusercontent.com/99389490/201178511-070b836f-928d-4b3a-9f7a-24fd628d83e0.png)
   
-  Заполненная таблица "UserProfile".
+ Заполненная таблица "UserProfile".
   
-  ![image](https://user-images.githubusercontent.com/99389490/201178612-998b0a22-d103-436a-b0d0-421af794ff9f.png)
+ ![image](https://user-images.githubusercontent.com/99389490/201178612-998b0a22-d103-436a-b0d0-421af794ff9f.png)
 
 ###
 Вывод: В данной практической работе были усвоены основы работы с базой данных, а также реализован класс который отвечает за базу данных. Реализованы следующие функции:
