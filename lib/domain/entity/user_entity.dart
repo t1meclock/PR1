@@ -1,12 +1,14 @@
-class UserEntity {
+class UserEntity{
   late int id;
-  final String login;
-  final String password;
-  final int role_id;
+  final String name;
+  final String surname;
   final int post_id;
 
-  UserEntity(
-      {required this.login, required this.password, required this.role_id, required this.post_id});
+ UserEntity({
+  required this.name,
+  required this.surname,
+  required this.post_id,
+  });
 }
 
 //enum EngineEnum{}

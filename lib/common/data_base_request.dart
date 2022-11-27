@@ -2,6 +2,7 @@ abstract class DataBaseRequest {
   /// Таблица Роли
   /// Поля таблицы: Название роли
   static const String tableRole = 'Role';
+  static const String tableAccount = 'Account';
   static const String tablePost = 'Post';
   static const String tableUsers = 'Users';
   static const String tableDelivery = 'Delivery';
@@ -16,6 +17,7 @@ abstract class DataBaseRequest {
     tableRole,
     tablePost,
     tableUsers,
+    tableAccount,
     tableDelivery,
     tableJournal,
     tableGroup,
@@ -28,6 +30,7 @@ abstract class DataBaseRequest {
   static const List<String> tableCreateList = [
     _createTableRole,
     _createTablePost,
+    _createTableAccount,
     _createTableUsers,
     _createTableDelivery,
     _createTableJournal,
@@ -40,6 +43,9 @@ abstract class DataBaseRequest {
 
   static const String _createTableRole =
       'CREATE TABLE "$tableRole" ("id" INTEGER, "role" TEXT NOT NULL UNIQUE, PRIMARY KEY("id" AUTOINCREMENT))';
+
+  static const String _createTableAccount =
+      'CREATE TABLE "$tableAccount" ("id" INTEGER, "login" TEXT NOT NULL UNIQUE, "password" TEXT NOT NULL, "id_role" INTEGER NOT NULL, FOREIGN KEY("id_role") REFERENCES "Role"("id"), PRIMARY KEY("id"))';
 
   static const String _createTablePost =
       'CREATE TABLE "$tablePost" ("id" INTEGER, "name_post" TEXT NOT NULL, "salary" DOUBLE, PRIMARY KEY("id" AUTOINCREMENT))';
