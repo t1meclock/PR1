@@ -4,7 +4,6 @@ import 'package:pr1/domain/entity/post_entity.dart';
 class User extends UserEntity {
   final String name;
   final String surname;
-  late int id;
   final int post_id;
   User({required this.name, required this.surname, required this.post_id})
       : super(

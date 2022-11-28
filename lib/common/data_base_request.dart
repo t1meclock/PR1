@@ -51,7 +51,7 @@ abstract class DataBaseRequest {
       'CREATE TABLE "$tablePost" ("id" INTEGER, "name_post" TEXT NOT NULL, "salary" DOUBLE, PRIMARY KEY("id" AUTOINCREMENT))';
 
   static const String _createTableUsers =
-      'CREATE TABLE "$tableUsers" ("id" INTEGER, "login" TEXT NOT NULL UNIQUE, "password" TEXT NOT NULL, "role_id" INTEGER, "post_id" INTEGER, PRIMARY KEY("id" AUTOINCREMENT), FOREIGN KEY("role_id") REFERENCES "Role"("id") on delete cascade, FOREIGN KEY("post_id") REFERENCES "Post"("id") on delete cascade)';
+      'CREATE TABLE "$tableUsers" ("name" TEXT NOT NULL UNIQUE, "surname" TEXT NOT NULL, "post_id" INTEGER, FOREIGN KEY("post_id") REFERENCES "Post"("id") on delete cascade)';
 
   static const String _createTableDelivery =
       'CREATE TABLE "$tableDelivery" ("id" INTEGER, "date_req" TEXT NOT NULL, "date_delivery" TEXT NOT NULL, "delivery" BIT, PRIMARY KEY("id" AUTOINCREMENT))';

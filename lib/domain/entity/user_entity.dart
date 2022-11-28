@@ -1,5 +1,4 @@
 class UserEntity{
-  late int id;
   final String name;
   final String surname;
   final int post_id;

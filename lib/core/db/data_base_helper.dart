@@ -35,7 +35,7 @@ import '../../domain/entity/role_entity.dart';
      _appDocumentDirectory =
         await path_provider.getApplicationDocumentsDirectory();
 
-    _pathDb = join(_appDocumentDirectory.path, 'warehouse1.db');
+    _pathDb = join(_appDocumentDirectory.path, 'warehouse3.db');
 
     if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
       sqfliteFfiInit();
@@ -100,6 +100,7 @@ import '../../domain/entity/role_entity.dart';
       db.insert(DataBaseRequest.tableStorage, Storage(name_storage: '1А729Р', number: '1').toMap());
       
       db.insert(DataBaseRequest.tableUsers, User(name: 'Абоба', surname: 'Абобович', post_id: 1).toMap());
+      db.insert(DataBaseRequest.tableUsers, User(name: 'fdsfds', surname: 'sdggdsd', post_id: 2).toMap());
 
       db.insert(DataBaseRequest.tableGroup, Group(name_group: 'Принтеры', desc_group: 'Лазерные принтеры. Довольно распространенный тип. В качестве краски такие устройства используют мелкий порошок - тонер. Такие принтеры могут печатать на любых типах бумаги, включая дизайнерский картон, самоклеющуюся и прозрачную пленку. Оттиски, сделанные лазерными принтерами, отличаются высоким качеством и долговечностью. Тонер не выгорает на солнце и не смывается водой. Идеально такие принтеры подходят для печати мелкого текста и тонких линий, а вот фотографии получаются неестественными и «плоскими». Еще один положительный момент - это скорость печати. Здесь с лазерниками не сравнится ничто. Однако стоят такие аппараты, как, впрочем, и их обслуживание, довольно дорого, поэтому рядовым пользователям такая роскошь вряд ли будет по карману.').toMap());
       db.insert(DataBaseRequest.tableGroup, Group(name_group: 'Видеокарты', desc_group: 'Современная видеокарта — графический процессор, который умеет быстро обрабатывать графику, справляется с моделированием, работой с искусственным интеллектом и компьютерным зрением, а также другими задачами. Компьютер с современной игровой видеокартой — универсальная платформа для работы, развлечений и обучения.').toMap());
@@ -111,6 +112,7 @@ import '../../domain/entity/role_entity.dart';
       db.insert(DataBaseRequest.tableUserProfile, UserProfile(surname: 'Сейджева', name: 'Сейдж', patronymic: 'Сейджевна', sex: 'Женский').toMap());
       db.insert(DataBaseRequest.tableUserProfile, UserProfile(surname: 'Чекалова', name: 'Ксения', patronymic: 'Сергеевна', sex: 'Женский').toMap());
       db.insert(DataBaseRequest.tableAccount, Account(login: 'aboba2411', password: md5.convert(utf8.encode('aboba2411')).toString(), id_role: RoleEnum.admin.id).toMap());
+      db.insert(DataBaseRequest.tableAccount, Account(login: 'aboba2511', password: md5.convert(utf8.encode('aboba2511')).toString(), id_role: RoleEnum.user.id).toMap());
     }
      on DatabaseException catch(e)
     {
