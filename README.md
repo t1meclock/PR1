@@ -23,7 +23,7 @@
 ![image](https://user-images.githubusercontent.com/99389490/204167496-6fdaa902-9a78-4d15-93e8-0e0ce05a86ec.png)
 ###
 ### Далее в созданной папке screens создаются папки, в которых будет лежать верстка авторизации, регистрации и окон для администратора и пользователя
-### Далее будутт продемонстрированы окна с валидацией, ошибка и окна администратора и пользователя.
+### Далее будут продемонстрированы окна с валидацией, ошибка и окна администратора и пользователя.
 ![image](https://user-images.githubusercontent.com/99389490/204167512-b94f0283-595e-411e-866f-f2d3b7f24cac.png)
 ![image](https://user-images.githubusercontent.com/99389490/204169287-e62ffdbc-3739-4ae6-a57d-fa0d4d141021.png)
 ![image](https://user-images.githubusercontent.com/99389490/204169034-8b8cdfaf-eaf5-4ea8-90df-8aff12a8d6df.png)
