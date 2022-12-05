@@ -22,7 +22,7 @@
 ### Ниже представлен файл click-state
 ![image](https://user-images.githubusercontent.com/99389490/205530087-f80a48ae-c211-45cd-b7cc-d4221ac5f9c4.png)
 ###
-### После необходимо перейти в main, где добавлется MultiBlocProvider, который показывает созданные cubit, а также здесь создается BlocBuilder, который меняет тему приложения
+### После необходимо перейти в main, где добавляется MultiBlocProvider, который показывает созданные cubit, а также здесь создается BlocBuilder, который меняет тему приложения
 ![image](https://user-images.githubusercontent.com/99389490/205530317-4493dd09-50b7-4a07-8240-271de5b3c452.png)
 ###
 ### Далее создается BlocBuilder для счетчика
