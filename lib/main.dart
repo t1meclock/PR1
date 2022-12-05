@@ -132,7 +132,7 @@ class MyHomePage extends StatelessWidget {
 
       floatingActionButton: FloatingActionButton(
         onPressed: () => context.read<ResCubit>().onClickClear(),
-        tooltip: 'clear list',
+        tooltip: 'Очистить результаты',
         backgroundColor: Colors.blueGrey,
         child: const Icon(Icons.clear),
       ), // This trailing comma makes auto-formatting nicer for build methods.
