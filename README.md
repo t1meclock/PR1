@@ -1,20 +1,20 @@
-# Практическая работа №3
+# Практическая работа №4
 
-### Тема: Реализация регистрации и авторизации пользователя
-### Цель работы: реализовать регистрацию и авторизацию пользователя.
+### Тема: Создать проект с использованием Cubit.
+### Цель работы: Создать проект с использованием Cubit. Реализовать кликер если светлая тема за клик прибавляет +1 если темная тема прибавляется +2. Реализовать список нажатий и при какой теме это было реализовано.
 ###
 ### Ход работы:
-### Для начала работы с авторизацией и регистрации необходимо скачать следующие библиотеки
-![image](https://user-images.githubusercontent.com/99389490/204167186-04892327-e22e-4a70-b25a-150c60995b1a.png)
+### Для начала работы необходимо скачать следующую библиотеку
+![image](https://user-images.githubusercontent.com/99389490/205529210-25f88eb8-7439-4ed2-a879-3f9b2f160dbe.png)
 ###
-### В папке core создается папка usercase, после создается файл auth.dart
-![image](https://user-images.githubusercontent.com/99389490/204167219-88460ab4-4a90-4f11-88b4-00d3f3bacca4.png)
+### После необходимо скачать расширение bloc
+![image](https://user-images.githubusercontent.com/99389490/205529301-b9ae07d7-f712-42bc-9f77-84163087cb51.png)
 ###
-### В папке data создается папка rep, здесь так же создается файл auth_repositories_impl.dart
-![image](https://user-images.githubusercontent.com/99389490/204167268-1bc85d57-e7b3-450f-8997-8818520e1bcb.png)
+### Для того, чтобы создать новые файлы cubit, необходимо нажать по папке и выбрать "Cubit: new Cubit"
+![image](https://user-images.githubusercontent.com/99389490/205529433-9b34369f-a28d-40a3-8e01-5a4cc18b66a9.png)
 ###
-### После необходимо изменить role_entity
-![image](https://user-images.githubusercontent.com/99389490/204167289-89d4b941-a479-4e15-8028-be4e67d1ba2f.png)
+### По такому принципу создаются все cubit-файлы в проекте. bright_theme_cubit - смена темы в приложении. click_cubit - счетчик в приложении. res_cubit - результат, выводимый в list
+![image](https://user-images.githubusercontent.com/99389490/205529623-2084a309-9118-4f87-8e90-096baa130b5d.png)
 ###
 ### В папке entity создается папка usercases, так же здесь создается файл auth.dart
 ![image](https://user-images.githubusercontent.com/99389490/204167401-4e9c7d06-c53b-47c7-a825-2923975544fa.png)
