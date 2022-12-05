@@ -36,4 +36,11 @@
 ###
 ### В итоге создается кнопка, которая будет очищать лист с результатами
 ![image](https://user-images.githubusercontent.com/99389490/205530849-a3d2d3e2-af83-402d-a114-aa40aa3a2eb9.png)
+###
+### Ниже представлены результаты приложения
+![image](https://user-images.githubusercontent.com/99389490/205643355-3300d29b-b60f-4c3b-90e9-20cf62bb9845.png)
+![image](https://user-images.githubusercontent.com/99389490/205643480-99564cfd-59be-4626-aa3b-2881f7144db4.png)
+![image](https://user-images.githubusercontent.com/99389490/205643525-42d43ab2-e0af-4afa-8d77-8771effe1680.png)
+![image](https://user-images.githubusercontent.com/99389490/205643576-89dce47d-dfb2-4f90-94e8-0a369c5b47ac.png)
+![image](https://user-images.githubusercontent.com/99389490/205643617-f3ab395b-d954-4fe5-bc1c-5218ae19a49e.png)
 ### Вывод: В данной практической работе был создан проект с использованием Cubit, а также был реализован в нем кликер с темной и светлой темой
