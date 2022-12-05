@@ -13,7 +13,7 @@ class ClickCubit extends Cubit<ClickState> {
     if(brightness == Brightness.light){
       count++;
     }
-    else{
+    else {
       count += 2;
     }
     
