@@ -1,36 +1,39 @@
-# Практическая работа №3
+# Практическая работа №4
 
-### Тема: Реализация регистрации и авторизации пользователя
-### Цель работы: реализовать регистрацию и авторизацию пользователя.
+### Тема: Создать проект с использованием Cubit.
+### Цель работы: Создать проект с использованием Cubit. Реализовать кликер если светлая тема за клик прибавляет +1 если темная тема прибавляется +2. Реализовать список нажатий и при какой теме это было реализовано.
 ###
 ### Ход работы:
-### Для начала работы с авторизацией и регистрации необходимо скачать следующие библиотеки
-![image](https://user-images.githubusercontent.com/99389490/204167186-04892327-e22e-4a70-b25a-150c60995b1a.png)
+### Для начала работы необходимо скачать следующую библиотеку
+![image](https://user-images.githubusercontent.com/99389490/205529705-859a6671-c4b1-40ee-b0c3-74b8b45b03e0.png)
 ###
-### В папке core создается папка usercase, после создается файл auth.dart
-![image](https://user-images.githubusercontent.com/99389490/204167219-88460ab4-4a90-4f11-88b4-00d3f3bacca4.png)
+### После необходимо скачать расширение bloc
+![image](https://user-images.githubusercontent.com/99389490/205529301-b9ae07d7-f712-42bc-9f77-84163087cb51.png)
 ###
-### В папке data создается папка rep, здесь так же создается файл auth_repositories_impl.dart
-![image](https://user-images.githubusercontent.com/99389490/204167268-1bc85d57-e7b3-450f-8997-8818520e1bcb.png)
+### Для того, чтобы создать новые файлы cubit, необходимо нажать по папке и выбрать "Cubit: new Cubit"
+![image](https://user-images.githubusercontent.com/99389490/205529433-9b34369f-a28d-40a3-8e01-5a4cc18b66a9.png)
 ###
-### После необходимо изменить role_entity
-![image](https://user-images.githubusercontent.com/99389490/204167289-89d4b941-a479-4e15-8028-be4e67d1ba2f.png)
+### По такому принципу создаются все cubit-файлы в проекте. bright_theme_cubit - смена темы в приложении. click_cubit - счетчик в приложении. res_cubit - результат, выводимый в list
+![image](https://user-images.githubusercontent.com/99389490/205529623-2084a309-9118-4f87-8e90-096baa130b5d.png)
 ###
-### В папке entity создается папка usercases, так же здесь создается файл auth.dart
-![image](https://user-images.githubusercontent.com/99389490/204167401-4e9c7d06-c53b-47c7-a825-2923975544fa.png)
+### Ниже представлен пример cubit-файла в проекте. В данном файле реализован кликер, если светлая тема за клик прибавляет +1, а если темная тема прибавляется +2
+![image](https://user-images.githubusercontent.com/99389490/205529886-c5273fa4-8b2e-4660-a5d0-3a8e02a05853.png)
 ###
-### Далее в папке entity создается еще одна папка repository, в ней так же файл auth_repository.dart
-![image](https://user-images.githubusercontent.com/99389490/204167496-6fdaa902-9a78-4d15-93e8-0e0ce05a86ec.png)
+### Ниже представлен файл click-state
+![image](https://user-images.githubusercontent.com/99389490/205530087-f80a48ae-c211-45cd-b7cc-d4221ac5f9c4.png)
 ###
-### Далее в созданной папке screens создаются папки, в которых будет лежать верстка авторизации, регистрации и окон для администратора и пользователя
-### Далее будутт продемонстрированы окна с валидацией, ошибка и окна администратора и пользователя.
-![image](https://user-images.githubusercontent.com/99389490/204167512-b94f0283-595e-411e-866f-f2d3b7f24cac.png)
-![image](https://user-images.githubusercontent.com/99389490/204169287-e62ffdbc-3739-4ae6-a57d-fa0d4d141021.png)
-![image](https://user-images.githubusercontent.com/99389490/204169034-8b8cdfaf-eaf5-4ea8-90df-8aff12a8d6df.png)
-![image](https://user-images.githubusercontent.com/99389490/204169071-e536c81a-58ce-43a1-8f3d-db512eb48b1d.png)
-![image](https://user-images.githubusercontent.com/99389490/204169105-da1a8f6e-7969-47bc-9b41-b54b9c6c1959.png)
-![image](https://user-images.githubusercontent.com/99389490/204169129-5cb03362-5215-4f43-8e9d-4a8e52ce6c98.png)
-![image](https://user-images.githubusercontent.com/99389490/204169173-2674152c-b893-42b3-a64d-29a690a160e5.png)
-![image](https://user-images.githubusercontent.com/99389490/204169211-ab2ee91b-89df-4055-aab2-7cbd18a3c6c6.png)
+### После необходимо перейти в main, где добавлется MultiBlocProvider, который показывает созданные cubit, а также здесь создается BlocBuilder, который меняет тему приложения
+![image](https://user-images.githubusercontent.com/99389490/205530317-4493dd09-50b7-4a07-8240-271de5b3c452.png)
 ###
-### Вывод: В данной практической работе были сделаны авторизация и регистрация для пользователей, используя .dart и Flutter.
+### Далее создается BlocBuilder для счетчика
+![image](https://user-images.githubusercontent.com/99389490/205530449-1f671138-3878-4f54-8263-53c69182201d.png)
+###
+### После создаются три кнопки, которые будут помогать в сложении, вычитании и смене темы приложения
+![image](https://user-images.githubusercontent.com/99389490/205530561-39b8f603-099a-4dac-a8e6-15f37a100254.png)
+###
+### Также создается BlocBuilder для вывода листа значений счетчика и с текущей темой приложения
+![image](https://user-images.githubusercontent.com/99389490/205530749-6230c31e-4af3-4ba8-9c90-49a3d80dabf5.png)
+###
+### В итоге создается кнопка, которая будет очищать лист с результатами
+![image](https://user-images.githubusercontent.com/99389490/205530849-a3d2d3e2-af83-402d-a114-aa40aa3a2eb9.png)
+### Вывод: В данной практической работе был создан проект с использованием Cubit, а также был реализован в нем кликер с темной и светлой темой
