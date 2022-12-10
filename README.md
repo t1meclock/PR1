@@ -9,8 +9,8 @@
 ###
 ### Для передачи данных необходимо использовать SharedPreferences. Для начала необходимо создать переменную _counter, куда будет записываться результат записи SharedPreferences. Далее создается initState, где будет получаться значение sharePreferences и записываться в переменную _counter. _incrementCounter помогает в записи в sharePreferences, туда записывается новое значение. Для того, чтобы данные задавать используется set, а для получения используется get
 ![image](https://user-images.githubusercontent.com/99389490/206819336-99a3451c-4f0d-4b00-a7f6-28e6f9de6715.png)
-![image](https://user-images.githubusercontent.com/99389490/206819613-2bbb878f-cd13-4c34-ba6f-8afea9fd59d5.png)
 ![image](https://user-images.githubusercontent.com/99389490/206819640-aa2bfb47-c805-4e0d-9783-19c458d1d254.png)
+![image](https://user-images.githubusercontent.com/99389490/206819613-2bbb878f-cd13-4c34-ba6f-8afea9fd59d5.png)
 ###
 ### Далее происходит создание файла screen.dart
 ![image](https://user-images.githubusercontent.com/99389490/206819830-9a4bf67b-aea3-440e-a08d-6ad419acf1dd.png)
