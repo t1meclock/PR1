@@ -19,7 +19,7 @@
 ![image](https://user-images.githubusercontent.com/99389490/206819886-b59395aa-4a9e-48f7-9783-bb06156189d9.png)
 ###
 ### После cоздается кнопка в файле main.dart, которая помогает передавать значение (число) и сообщение на второе окно 
-![image](https://user-images.githubusercontent.com/99389490/206821594-cd725979-4ef2-4179-a7e1-3885db1feae5.png)
+![image](https://user-images.githubusercontent.com/99389490/206821683-3b0b431b-323c-47d9-b3e6-17b656333198.png)
 ###
 ### Так же необходимо прописать кнопку увеличения значения
 ![image](https://user-images.githubusercontent.com/99389490/206821093-eae7101e-307e-4b83-83c8-805e6972214e.png)
