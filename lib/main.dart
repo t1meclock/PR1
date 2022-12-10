@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
   final SharedPreferences sharedPreferences=await SharedPreferences.getInstance();
-  runApp( MyApp(sharedPreferences));
+  runApp(MyApp(sharedPreferences));
 }
 
 class MyApp extends StatelessWidget {
@@ -38,8 +38,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   int _counter = 0;
-  String message="Число";
+  String message = "Число";
 
   void _incrementCounter() async {
     setState(() {
@@ -49,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
      await widget.sharedPreferences.setString("message", message);
   }
 
-String nowtext ="";
+String nowtext = "";
 
   @override
   void initState()  { 
@@ -75,11 +76,11 @@ String nowtext ="";
             ),
             ElevatedButton(
                 onPressed: () {
-                  List<Object> toScreen=<Object>[];
-                  toScreen.add(_counter);
-                  toScreen.add(widget.sharedPreferences.getString('message')??'');
+                  List<Object> SecScreen=<Object>[];
+                  SecScreen.add(_counter);
+                  SecScreen.add(widget.sharedPreferences.getString('message')??'');
 
-                    Navigator.pushNamed(context,"/second", arguments:  toScreen
+                    Navigator.pushNamed(context, "/second", arguments:  SecScreen
                      );
                 },
                 child: Text('Вывести значение'))
